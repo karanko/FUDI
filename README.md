@@ -9,7 +9,7 @@ Currently I've only implemented UDP, I'll be adding TCP shortly.
 
 ## Send example
 ```c#
-Netsend send = new Karanko.FUDI.Netsend(3001);
+Karanko.FUDI.Netsend send = new Karanko.FUDI.Netsend(3001);
 send.Connect();
 if (send.Connected())
 {
@@ -22,16 +22,16 @@ if (send.Connected())
  
 ## Receive example
 ```c#
-static void Main()
+void Main()
 {
-    Netreceive x = new Netreceive(9090);
-    x.OnReceive += new EventHandler(DoWork);
-    x.Connect();
+    Karanko.FUDI.Netreceive receive = new Karanko.FUDI.Netreceive(9090);
+    receive.OnReceive += new EventHandler(DoWork);
+    receive.Connect();
 
     Console.ReadLine();
-    x.Disconnect();
+    receive.Disconnect();
 }
-private static void DoWork(object s, EventArgs e)
+void DoWork(object s, EventArgs e)
 {
     string message = (string)s;
     Console.WriteLine(message);
