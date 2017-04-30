@@ -46,9 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Karanko.FUDI\Karanko.FUDI.csproj">
       <Project>{66054bfe-bac5-4a4c-b8b7-91a1870149ad}</Project>
       <Name>Karanko.FUDI</Name>
