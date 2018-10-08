@@ -3,7 +3,8 @@ Simple FUDI compliant networking protocol for C#
 
 FUDI is a networking protocol used by the Pure Data patching language invented by Miller Puckette. It is a string based protocol in which messages are separated by semicolons. Messages are made up of tokens separated by whitespaces, and numerical tokens are represented as strings.
 
-[More info on FUDI (wiki)]( https://en.wikipedia.org/wiki/FUDI )
+[More info on FUDI]( https://en.wikipedia.org/wiki/FUDI ) Wiki.
+[PureData](https://github.com/pure-data/pure-data)
 
 Currently I've only implemented UDP, I'll be adding TCP shortly.
 
